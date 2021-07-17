@@ -1,0 +1,4 @@
+services:
+  plugin.manager.info_fetcher:
+    class: Drupal\info_fetcher\Plugin\InfoFetcherManager
+    parent: default_plugin_manager

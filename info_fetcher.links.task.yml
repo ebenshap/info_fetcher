@@ -1,0 +1,17 @@
+# FetchedInfo entity task items
+entity.fetched_info.canonical:
+  route_name: entity.fetched_info.canonical
+  base_route: entity.fetched_info.canonical
+  title: 'View'
+
+entity.fetched_info.edit_form:
+  route_name: entity.fetched_info.edit_form
+  base_route: entity.fetched_info.canonical
+  title: 'Edit'
+
+entity.fetched_info.delete_form:
+  route_name:  entity.fetched_info.delete_form
+  base_route:  entity.fetched_info.canonical
+  title: Delete
+  weight: 10
+

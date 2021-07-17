@@ -1,0 +1,12 @@
+info_fetcher.fetched_info_type.*:
+  type: config_entity
+  label: 'fetched_info type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

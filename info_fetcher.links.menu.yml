@@ -1,0 +1,15 @@
+# FetchedInfo entity menu items
+entity.fetched_info.collection:
+  title: 'FetchedInfo list'
+  route_name: entity.fetched_info.collection
+  description: 'List FetchedInfo entities'
+  parent: system.admin_structure
+  weight: 100
+
+entity.fetched_info_type.collection:
+  title: 'FetchedInfo types'
+  route_name: entity.fetched_info_type.collection
+  description: 'List FetchedInfo bundles'
+  parent: system.admin_structure
+  weight: 99
+

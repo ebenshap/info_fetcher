@@ -1,0 +1,16 @@
+<?php
+
+use Symfony\Component\HttpFoundation\Response;
+
+function info_fetcher_cron(){
+  $fetcherManager = \Drupal::service('plugin.manager.info_fetcher');
+
+  $allPlugins = $fetcherManager->getDefinitions();
+  foreach($allPlugins as $item) {
+    //print_r($item);
+    $plugin = $fetcherManager->createInstance($item['id']);
+    $plugin->getInfo();
+  }
+
+}
+
