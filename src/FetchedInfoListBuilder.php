@@ -24,7 +24,7 @@ class FetchedInfoListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\info_fetcher\Entity\Fetched_info */
+    /* @var $entity \Drupal\info_fetcher\Entity\FetchedInfo */
     $row['id'] = $entity->id();
     $row['name'] = Link::fromTextAndUrl(
       $entity->label(),

@@ -5,7 +5,7 @@ use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
 use Drupal\Core\Entity\EntityInterface;
 
 /**
- * List builder for Fetched_infoType entities.
+ * List builder for FetchedInfoType entities.
  */
 class FetchedInfoTypeListBuilder extends ConfigEntityListBuilder {
 

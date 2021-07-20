@@ -5,7 +5,7 @@ use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Form for creating/editing Fectched_info entities.
+ * Form for creating/editing Fetched_info entities.
  */
 class FetchedInfoForm extends ContentEntityForm {
 
@@ -13,7 +13,7 @@ class FetchedInfoForm extends ContentEntityForm {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    /* @var $entity \Drupal\info_fetcher\Entity\Fectched_info */
+    /* @var $entity \Drupal\info_fetcher\Entity\FetchedInfo */
     $form = parent::buildForm($form, $form_state);
     return $form;
   }
@@ -28,13 +28,13 @@ class FetchedInfoForm extends ContentEntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        \Drupal::messenger()->addStatus($this->t('Created the %label Fectched_info.', [
+        \Drupal::messenger()->addStatus($this->t('Created the %label Fetched_info.', [
           '%label' => $entity->label(),
         ]));
         break;
 
       default:
-        \Drupal::messenger()->addStatus($this->t('Saved the %label Fectched_info.', [
+        \Drupal::messenger()->addStatus($this->t('Saved the %label Fetched_info.', [
           '%label' => $entity->label(),
         ]));
     }

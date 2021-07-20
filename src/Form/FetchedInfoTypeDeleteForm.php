@@ -14,7 +14,8 @@ class FetchedInfoTypeDeleteForm extends EntityConfirmFormBase {
    * {@inheritdoc}
    */
   public function getQuestion() {
-    return $this->t('Are you sure you want to delete %name?', ['%name' => $this->entity->label()]);
+    return $this->t('Are you sure you want to delete %name?', 
+      [ '%name' => $this->entity->label() ]);
   }
 
   /**
@@ -37,7 +38,8 @@ class FetchedInfoTypeDeleteForm extends EntityConfirmFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->entity->delete();
 
-    \Drupal::messenger()->addStatus($this->t('Deleted @entity fetched_info type.', ['@entity' => $this->entity->label()]));
+    \Drupal::messenger()->addStatus($this->t('Deleted @entity fetched_info type.', 
+      [ '@entity' =>  $this->entity->label() ]));
 
     $form_state->setRedirectUrl($this->getCancelUrl());
   }

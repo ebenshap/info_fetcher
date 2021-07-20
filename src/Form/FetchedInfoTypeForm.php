@@ -6,7 +6,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\info_fetcher\Entity\FetchedInfoTypeInterface;
 
 /**
- * Form handler for creating/editing Fetched_infoType entities
+ * Form handler for creating/editing FetchedInfoType entities
  */
 class FetchedInfoTypeForm extends EntityForm {
 
@@ -16,7 +16,7 @@ class FetchedInfoTypeForm extends EntityForm {
   public function form(array $form, FormStateInterface $form_state) {
     $form = parent::form($form, $form_state);
 
-    /** @var Fetched_infoTypeInterface $fetched_info_type */
+    /** @var FetchedInfoTypeInterface $fetched_info_type */
     $fetched_info_type = $this->entity;
     $form['label'] = [
       '#type' => 'textfield',
@@ -31,7 +31,7 @@ class FetchedInfoTypeForm extends EntityForm {
       '#type' => 'machine_name',
       '#default_value' => $fetched_info_type->id(),
       '#machine_name' => [
-        'exists' => '\Drupal\info_fetcher\Entity\Fetched_infoType::load',
+        'exists' => '\Drupal\info_fetcher\Entity\FetchedInfoType::load',
       ],
       '#disabled' => !$fetched_info_type->isNew(),
     ];

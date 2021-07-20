@@ -13,12 +13,11 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *
  * @ContentEntityType(
  *   id = "fetched_info",
- *   label = @Translation("Fetched_info"),
- *   bundle_label = @Translation("Fetched_info type"),
+ *   label = @Translation("Fetched Info"),
+ *   bundle_label = @Translation("Fetched Info Type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\info_fetcher\FetchedInfoListBuilder",
- *     "views_data" = "Drupal\info_fetcher\Entity\FetchedInfoViewsData",
  *     "form" = {
  *       "default" = "Drupal\info_fetcher\Form\FetchedInfoForm",
  *       "add" = "Drupal\info_fetcher\Form\FetchedInfoForm",
@@ -116,7 +115,7 @@ class FetchedInfo extends ContentEntityBase implements FetchedInfoInterface {
 
     $fields['created'] = BaseFieldDefinition::create('created')
       ->setLabel(t('Created'))
-      ->setDescription(t('The time that the entity was created.'));
+      ->setDescription(t('The time that the entity was created.'))
 
     $fields['changed'] = BaseFieldDefinition::create('changed')
       ->setLabel(t('Changed'))

@@ -1,7 +1,5 @@
 <?php
 
-use Symfony\Component\HttpFoundation\Response;
-
 function info_fetcher_cron(){
   $fetcherManager = \Drupal::service('plugin.manager.info_fetcher');
 
@@ -13,4 +11,3 @@ function info_fetcher_cron(){
   }
 
 }
-

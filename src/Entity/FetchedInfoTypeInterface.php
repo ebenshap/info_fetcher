@@ -4,6 +4,6 @@ namespace Drupal\info_fetcher\Entity;
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
 
 /**
- * Fectched_info bundle interface.
+ * Fetched_info bundle interface.
  */
 interface FetchedInfoTypeInterface extends ConfigEntityInterface {}

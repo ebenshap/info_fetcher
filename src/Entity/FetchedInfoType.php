@@ -8,7 +8,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *
  * @ConfigEntityType(
  *   id = "fetched_info_type",
- *   label = @Translation("FetchedInfo type"),
+ *   label = @Translation("Fetched Info Type"),
  *   handlers = {
  *     "list_builder" = "Drupal\info_fetcher\FetchedInfoTypeListBuilder",
  *     "form" = {
